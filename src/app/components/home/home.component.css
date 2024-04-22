@@ -1,0 +1,49 @@
+h3 {
+  text-align: center;
+}
+
+.home {
+  margin-top: 30px;
+  display: grid;
+  grid-gap: 5px;
+  grid-template-rows: 0px 1fr 10fr 1fr;
+  grid-template-columns: 0.1fr 1fr 0.2fr;
+  grid-template-areas:
+    "aggregate aggregate aggregate"
+    "sidebar title ads"
+    "sidebar place ads"
+    "sidebar place ads";
+}
+
+.aggregate {
+  grid-area: aggregate;
+  background-color: rgba(117, 190, 218, 0);
+  margin-top: -48px;
+}
+
+.title {
+  grid-area: title;
+  background-color: gold;
+  font-family: "Lobster", sans-serif;
+  text-align: center;
+  font-size: 40px;
+}
+
+.sidebar {
+  grid-area: sidebar;
+  background-color: gold;
+  padding-left: 10px;
+}
+
+.place {
+  grid-area: place;
+  background-color: gold;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.ads {
+  grid-area: ads;
+  background-color: gold;
+}
+

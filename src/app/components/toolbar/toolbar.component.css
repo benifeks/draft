@@ -1,0 +1,43 @@
+.toolbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  font-weight: 600;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.toolbar img {
+  margin: 0 16px;
+}
+
+.linkColor {
+  color: blueviolet;
+  margin-left: 10px;
+}
+
+.poster {
+  position: relative;
+  color: blueviolet;
+  margin-left: 10px;
+}
+.descr {
+  display: none;
+  padding: 10px;
+  padding-top: 2px;
+  margin-top: 14px;
+  background: #f3f3f3;
+  border: 1px solid black;
+  height: 150px;
+}
+.poster:hover .descr {
+  display: block;
+  position: absolute;
+  top: 1px;
+  width: 120px;
+}

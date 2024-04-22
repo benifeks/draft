@@ -1,0 +1,32 @@
+.draft {
+  text-align: center;
+  font-family: "Kurale", sans-serif;
+}
+
+.main {
+  display: grid;
+  grid-gap: 5px;
+  grid-template-rows: 0.02fr 1fr 0.02fr;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "toolbar"
+    "place"
+    "footer";
+}
+
+.toolbar {
+  grid-area: toolbar;
+  background-color: gold;
+}
+
+.place {
+  grid-area: place;
+  background-color: rgba(117, 190, 218, 0);
+}
+
+.footer {
+  grid-area: footer;
+  background-color: gold;
+  font-family: "Kurale", sans-serif;
+  text-align: center;
+}
