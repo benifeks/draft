@@ -26,9 +26,30 @@
 .place {
   grid-area: place;
   background-color: gold;
+  display: grid;
+  gap: 5px;
+  grid-template-rows: 0.05fr auto;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "buttons"
+    "field";
 }
 
 .ads {
   grid-area: ads;
   background-color: gold;
+}
+
+.buttons {
+  text-align: center;
+  background-color: aquamarine;
+}
+
+.field {
+  text-align: center;
+  background-color: aquamarine;
+}
+
+.target {
+  margin-left: 10px;
 }
