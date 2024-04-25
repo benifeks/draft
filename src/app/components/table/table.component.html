@@ -1,6 +1,24 @@
 <div class="table">
   <div class="title">table works!</div>
+
   <div class="sidebar"></div>
-  <div class="place"></div>
+
+  <div class="place">
+    <app-buttons class="buttons" (testData)="showData($event)"></app-buttons>
+    <app-field
+      class="field"
+      [dataTable]="dataTable"
+      [tableVariables]="tableVariables"
+    ></app-field>
+    <div class="target">
+      Предварительные цели:
+      <ul>
+        <li>Получить данные http</li>
+        <li>Заполнить таблицу заданного типа</li>
+        <li>Организовать взаимодействие с помощью @Input и @Ounput</li>
+      </ul>
+    </div>
+  </div>
+
   <div class="ads"></div>
 </div>

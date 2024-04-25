@@ -1,0 +1,89 @@
+<div class="tableComponent">
+  <table class="tableOnly">
+    <thead>
+      <!--  -->
+      <tr>
+        <td></td>
+
+        <td>
+          <button ngClass="buttonArrow" [disabled]="">
+            <img ngClass="imgArrow" src=" {{ tableVariables.doubleArrow }} " />
+          </button>
+        </td>
+
+        <td>
+          <button ngClass="buttonArrow" [disabled]="">
+            <img ngClass="imgArrow" src=" {{ tableVariables.doubleArrow }} " />
+          </button>
+        </td>
+
+        <td>
+          <button ngClass="buttonArrow" [disabled]="">
+            <img ngClass="imgArrow" src=" {{ tableVariables.doubleArrow }} " />
+          </button>
+        </td>
+
+        <td>
+          <button ngClass="buttonArrow" [disabled]="">
+            <img ngClass="imgArrow" src=" {{ tableVariables.doubleArrow }} " />
+          </button>
+        </td>
+
+        <td>
+          <button ngClass="buttonArrow" [disabled]="">
+            <img ngClass="imgArrow" src=" {{ tableVariables.doubleArrow }} " />
+          </button>
+        </td>
+
+        <td>
+          <button ngClass="buttonArrow" [disabled]="">
+            <img ngClass="imgArrow" src=" {{ tableVariables.doubleArrow }} " />
+          </button>
+        </td>
+
+        <td>
+          <button ngClass="buttonArrow" [disabled]="">
+            <img ngClass="imgArrow" src=" {{ tableVariables.doubleArrow }} " />
+          </button>
+        </td>
+      </tr>
+      <!--  -->
+      <tr>
+        <td class="columnNames">№</td>
+
+        <td class="columnNames">First name</td>
+
+        <td class="columnNames">Last name</td>
+
+        <td class="columnNames">Sex</td>
+
+        <td class="columnNames">Age</td>
+
+        <td class="columnNames">Email</td>
+
+        <td class="columnNames">Phone</td>
+
+        <td class="columnNames">Company</td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of dataTable.wholeTable; let i = index">
+        <td>{{ i + 1 }}</td>
+
+        <td>{{ item.firstName }}</td>
+
+        <td>{{ item.lastName }}</td>
+
+        <td>{{ item.sex }}</td>
+
+        <td>{{ item.age }}</td>
+
+        <td>{{ item.email }}</td>
+
+        <td>{{ item.phone }}</td>
+
+        <td>{{ item.company }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

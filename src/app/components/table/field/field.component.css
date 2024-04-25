@@ -1,0 +1,44 @@
+.tableComponent {
+  text-align: center;
+  margin: 5px;
+}
+
+.tableOnly {
+  background-color: rgb(243, 245, 227);
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin: auto;
+}
+
+table,
+td,
+th {
+  border: 1px solid black;
+}
+
+td,
+th {
+  padding: 3px;
+  width: 30px;
+  height: 25px;
+}
+
+th {
+  background-color: #7accee !important;
+}
+
+.columnNames {
+  font-weight: 900;
+  font-size: larger;
+  font-style: italic;
+  padding-left: 5px;
+}
+
+.imgArrow {
+  height: 26px;
+  width: 26px;
+  background-color: rgb(197, 167, 225);
+}
