@@ -1,5 +1,5 @@
-import { Component, Input } from '@angular/core';
-import { DataTable, TableVariables } from 'src/app/models/tableModels';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { DataTable, OutSelectedColumn } from 'src/app/models/tableModels';
 
 @Component({
   selector: 'app-field',
@@ -7,6 +7,16 @@ import { DataTable, TableVariables } from 'src/app/models/tableModels';
   styleUrls: ['./field.component.css'],
 })
 export class FieldComponent {
+  @Output() outColumn: EventEmitter<OutSelectedColumn> =
+    new EventEmitter<OutSelectedColumn>();
   @Input() public dataTable: DataTable;
-  @Input() public tableVariables: TableVariables;
+
+  public changeArrow(event: any, column: string): void {
+    let selectedColumn: OutSelectedColumn = {
+      idColumn: event.target.id,
+      nameColumn: column,
+    };
+
+    this.outColumn.emit(selectedColumn);
+  }
 }

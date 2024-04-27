@@ -1,55 +1,25 @@
 <div class="tableComponent">
   <table class="tableOnly">
     <thead>
-      <!--  -->
-      <tr>
+      <tr *ngIf="dataTable.showSortButtons">
+
         <td></td>
 
-        <td>
-          <button ngClass="buttonArrow" [disabled]="">
-            <img ngClass="imgArrow" src=" {{ tableVariables.doubleArrow }} " />
-          </button>
+        <td *ngFor="let item of dataTable.imgButtons; let i = index">
+          <button
+          style="background-image: url('assets/img/table/{{ item.imgUrl }}.png')"
+          id="imgBtn{{ i }}"
+          (click)="changeArrow($event, item.column)"
+          ngClass="buttonArrow"
+        ></button>
         </td>
 
-        <td>
-          <button ngClass="buttonArrow" [disabled]="">
-            <img ngClass="imgArrow" src=" {{ tableVariables.doubleArrow }} " />
-          </button>
-        </td>
-
-        <td>
-          <button ngClass="buttonArrow" [disabled]="">
-            <img ngClass="imgArrow" src=" {{ tableVariables.doubleArrow }} " />
-          </button>
-        </td>
-
-        <td>
-          <button ngClass="buttonArrow" [disabled]="">
-            <img ngClass="imgArrow" src=" {{ tableVariables.doubleArrow }} " />
-          </button>
-        </td>
-
-        <td>
-          <button ngClass="buttonArrow" [disabled]="">
-            <img ngClass="imgArrow" src=" {{ tableVariables.doubleArrow }} " />
-          </button>
-        </td>
-
-        <td>
-          <button ngClass="buttonArrow" [disabled]="">
-            <img ngClass="imgArrow" src=" {{ tableVariables.doubleArrow }} " />
-          </button>
-        </td>
-
-        <td>
-          <button ngClass="buttonArrow" [disabled]="">
-            <img ngClass="imgArrow" src=" {{ tableVariables.doubleArrow }} " />
-          </button>
-        </td>
       </tr>
-      <!--  -->
+    </thead>
+    <thead>
+
       <tr>
-        <td class="columnNames">№</td>
+        <td ngClass="columnNames">№</td>
 
         <td class="columnNames">First name</td>
 
@@ -86,4 +56,5 @@
       </tr>
     </tbody>
   </table>
+
 </div>
