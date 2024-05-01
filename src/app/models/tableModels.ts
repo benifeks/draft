@@ -29,12 +29,25 @@ export interface ObjectForTheTable {
   company: string;
 }
 
-export interface DataTable {
-  wholeTable: Array<ObjectForTheTable>;
+export interface Columns {
+  imgUrl: string;
+  id: string;
+  column: string;
 }
 
-export interface TableVariables {
-  doubleArrow: string;
-  upArrow: string;
-  downArrow: string;
+export interface DataTable {
+  tableArrows: {
+    doubleArrow: string;
+    upArrow: string;
+    downArrow: string;
+  };
+  showSortButtons: boolean;
+  wholeTable: Array<ObjectForTheTable>;
+  imgButtons: Array<Columns>;
+  ascending: boolean;
+}
+
+export interface OutSelectedColumn {
+  idColumn: string;
+  nameColumn: string;
 }

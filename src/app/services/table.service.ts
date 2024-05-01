@@ -21,9 +21,4 @@ export class TableService {
       };
     });
   }
-
-  ////////////////////////////////////////////////
-  public test(): void {
-    console.log('test');
-  }
 }

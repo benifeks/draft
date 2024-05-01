@@ -7,8 +7,8 @@
     <app-buttons class="buttons" (testData)="showData($event)"></app-buttons>
     <app-field
       class="field"
+      (outColumn)="sortColumn($event)"
       [dataTable]="dataTable"
-      [tableVariables]="tableVariables"
     ></app-field>
     <div class="target">
       Предварительные цели:
