@@ -25,7 +25,23 @@
 
 .place {
   grid-area: place;
-  background-color: gold;
+  display: grid;
+  grid-gap: 5px;
+  grid-template-rows: 0.8fr auto;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "cards "
+    "control ";
+}
+
+.cards {
+  grid-area: cards;
+  background-color: bisque;
+}
+
+.control {
+  grid-area: control;
+  background-color: bisque;
 }
 
 .ads {

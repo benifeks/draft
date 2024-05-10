@@ -1,6 +1,28 @@
 <div class="blackjack">
   <div class="title">blackjack works!</div>
+
   <div class="sidebar"></div>
-  <div class="place"></div>
+
+  <div class="place">
+    <div class="cards">
+      <app-cards
+        [result]="result"
+        [scoreboardStatus]="scoreboardStatus"
+        [cardsPlayer]="cardsPlayer"
+        [showCardsBankir]="showCardsBankir"
+      ></app-cards>
+    </div>
+    <div class="control">
+      <app-control
+        [shuffleStatus]="shuffleStatus"
+        [takeStatus]="takeStatus"
+        [passStatus]="passStatus"
+        (shuffledDeck)="startTheGame($event)"
+        (takeCardActivation)="takeCardPlayer($event)"
+        (refuseTakeCardActivation)="pass($event)"
+      ></app-control>
+    </div>
+  </div>
+
   <div class="ads"></div>
 </div>

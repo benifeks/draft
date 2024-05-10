@@ -1,0 +1,7 @@
+<button *ngIf="shuffleStatus" class="button" (click)="shuffleCards()">
+  shuffle
+</button>
+<button *ngIf="takeStatus" class="button" (click)="takeCard()">take</button>
+<button *ngIf="passStatus" class="button" (click)="refuseTakeCard()">
+  pass
+</button>
