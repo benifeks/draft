@@ -1,0 +1,21 @@
+<button
+  *ngIf="bjrxjsServise.shuffleStatus"
+  class="button"
+  (click)="shuffledDeck()"
+>
+  shuffle
+</button>
+<button
+  *ngIf="bjrxjsServise.takeStatus"
+  class="button"
+  (click)="bjrxjsServise.takeCard()"
+>
+  take
+</button>
+<button
+  *ngIf="bjrxjsServise.passStatus"
+  class="button"
+  (click)="bjrxjsServise.pass()"
+>
+  pass
+</button>
