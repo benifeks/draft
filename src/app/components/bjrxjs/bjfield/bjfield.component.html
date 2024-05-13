@@ -1,0 +1,32 @@
+<div ngClass="field">
+    <!--  -->
+    <div class="flex-container">
+      <div *ngFor="let item of bjrxjs.cardsPlayer">
+        <img class="card" src="assets/img/deck/{{ item.card }}.bmp" />
+      </div>
+    </div>
+    <!--  -->
+    <div class="flex-container">
+      <div class="deck">
+        <img class="card" src="assets/img/deck/shirt.bmp" />
+        <img class="cardDeck_1" src="assets/img/deck/shirt.bmp" />
+        <img class="cardDeck_2" src="assets/img/deck/shirt.bmp" />
+      </div>
+      <!--  -->
+      <div *ngIf="bjrxjs.scoreboardStatus" class="result">
+        <br />
+        <div>Player: {{ bjrxjs.result.resultPlayer }}</div>
+        <br />
+        <div>ResultGame: {{ bjrxjs.result.resultGame }}</div>
+        <br />
+        <div>Bankir: {{ bjrxjs.result.showResultBankir }}</div>
+      </div>
+    </div>
+    <!--  -->
+    <div class="flex-container">
+      <div *ngFor="let item of bjrxjs.showCardsBankir">
+        <img class="card" src="assets/img/deck/{{ item.card }}.bmp" />
+      </div>
+    </div>
+    <!--  -->
+  </div>

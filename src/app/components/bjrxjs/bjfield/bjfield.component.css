@@ -1,0 +1,44 @@
+.field {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-container {
+  height: 140px;
+  display: flex;
+  flex-direction: row;
+}
+
+.card {
+  border: 1px black solid;
+  border-radius: 10px;
+  width: 90px;
+  height: 130px;
+  margin: 1px;
+}
+
+.deck {
+  display: flex;
+}
+
+.cardDeck_1 {
+  border: 1px black solid;
+  border-radius: 10px;
+  width: 90px;
+  height: 130px;
+  margin-top: 3px;
+  margin-left: -89px;
+}
+.cardDeck_2 {
+  border: 1px black solid;
+  border-radius: 10px;
+  width: 90px;
+  height: 130px;
+  margin-top: 6px;
+  margin-left: -88px;
+}
+
+.result {
+  margin-left: 50px;
+  font-size: 20px;
+}

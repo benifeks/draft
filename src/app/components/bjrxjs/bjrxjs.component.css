@@ -1,0 +1,50 @@
+.blackjack {
+    margin-top: 30px;
+    display: grid;
+    grid-gap: 5px;
+    grid-template-rows: 1fr 10fr 1fr;
+    grid-template-columns: 0.2fr 1fr 0.2fr;
+    grid-template-areas:
+      "sidebar title ads"
+      "sidebar place ads"
+      "sidebar place ads";
+  }
+  
+  .title {
+    grid-area: title;
+    background-color: gold;
+    font-family: "Lobster", sans-serif;
+    text-align: center;
+    font-size: 40px;
+  }
+  
+  .sidebar {
+    grid-area: sidebar;
+    background-color: gold;
+  }
+  
+  .place {
+    grid-area: place;
+    display: grid;
+    grid-gap: 5px;
+    grid-template-rows: 0.8fr auto;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "cards "
+      "control ";
+  }
+  
+  .bjfield {
+    grid-area: cards;
+    background-color: bisque;
+  }
+  
+  .bjbuttons {
+    grid-area: control;
+    background-color: bisque;
+  }
+  
+  .ads {
+    grid-area: ads;
+    background-color: gold;
+  }

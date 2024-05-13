@@ -19,6 +19,10 @@ import { FieldComponent } from './components/table/field/field.component';
 import { CardsComponent } from './components/blackjack/cards/cards.component';
 import { ControlComponent } from './components/blackjack/control/control.component';
 import { BlackjackService } from './services/blackjack.service';
+import { BjrxjsComponent } from './components/bjrxjs/bjrxjs.component';
+import { BjbuttonsComponent } from './components/bjrxjs/bjbuttons/bjbuttons.component';
+import { BjfieldComponent } from './components/bjrxjs/bjfield/bjfield.component';
+import { BjrxjsService } from './services/bjrxjs.service';
 
 @NgModule({
   declarations: [
@@ -32,9 +36,12 @@ import { BlackjackService } from './services/blackjack.service';
     FieldComponent,
     CardsComponent,
     ControlComponent,
+    BjrxjsComponent,
+    BjbuttonsComponent,
+    BjfieldComponent,
   ],
   imports: [AppRoutingModule, BrowserModule, FormsModule, HttpClientModule],
-  providers: [BlackjackService, TableService],
+  providers: [BlackjackService, TableService, BjrxjsService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
